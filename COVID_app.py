@@ -14,6 +14,16 @@ from pandas.io.json import json_normalize
 import pandas as pd
 import requests
 from matplotlib.figure import Figure
+
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 today = date.today()
 #sns.set_style('whitegrid')
 style.use('fivethirtyeight')
@@ -468,14 +478,7 @@ plot_county(['Solano'])
 st.markdown("## State of California")
 plot_state()
 
-hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style>
 
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 
 

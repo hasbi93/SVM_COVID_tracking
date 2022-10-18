@@ -442,7 +442,7 @@ st.sidebar.markdown('For additional information  please contact *epicenter@ucdav
 st.markdown('## Select counties of interest')
 CA_counties = confirmed[confirmed.Province_State == 'California'].Admin2.unique().tolist()
 
-COUNTIES_SELECTED = st.multiselect('Select counties', CA_counties, default=['California City'])
+COUNTIES_SELECTED = st.multiselect('Select counties', CA_counties, default=['Los Angeles'])
 
 st.sidebar.markdown("One of the key metrics for which data are widely available is the estimate of **daily new cases per 100,000 population**. Here, in following graphics, we will track")
 
@@ -463,8 +463,8 @@ st.markdown(COUNTIES_SELECTED)
 plot_county(COUNTIES_SELECTED)
 
 
-st.markdown("## Tri-county area (Los Angeles, San Francisco, California City)")
-plot_county(['Los Angeles', 'San Francisco', 'California City'])
+st.markdown("## Tri-county area (Los Angeles, San Francisco, Beverly Hills)")
+plot_county(['Los Angeles', 'San Francisco', 'Beverly Hills'])
 
 st.markdown("## Los Angeles")
 plot_county(['Los Angeles'])
@@ -472,8 +472,8 @@ plot_county(['Los Angeles'])
 st.markdown("## San Francisco")
 plot_county(['San Francisco'])
 
-st.markdown("## California City")
-plot_county(['California City'])
+st.markdown("## Beverly Hills")
+plot_county(['Beverly Hills'])
 
 st.markdown("## State of California")
 plot_state()

@@ -442,7 +442,7 @@ st.sidebar.markdown('For additional information  please contact *epicenter@ucdav
 st.markdown('## Select counties of interest')
 CA_counties = confirmed[confirmed.Province_State == 'California'].Admin2.unique().tolist()
 
-COUNTIES_SELECTED = st.multiselect('Select counties', CA_counties, default=['Yolo'])
+COUNTIES_SELECTED = st.multiselect('Select counties', CA_counties, default=['California City'])
 
 st.sidebar.markdown("One of the key metrics for which data are widely available is the estimate of **daily new cases per 100,000 population**. Here, in following graphics, we will track")
 
@@ -463,17 +463,17 @@ st.markdown(COUNTIES_SELECTED)
 plot_county(COUNTIES_SELECTED)
 
 
-st.markdown("## Tri-county area (Yolo, Sacramento, Solano)")
-plot_county(['Yolo', 'Solano', 'Sacramento'])
+st.markdown("## Tri-county area (Los Angeles, San Francisco, California City)")
+plot_county(['Los Angeles', 'San Francisco', 'California City'])
 
-st.markdown("## Yolo")
-plot_county(['Yolo'])
+st.markdown("## Los Angeles")
+plot_county(['Los Angeles'])
 
-st.markdown("## Sacramento")
-plot_county(['Sacramento'])
+st.markdown("## San Francisco")
+plot_county(['San Francisco'])
 
-st.markdown("## Solano")
-plot_county(['Solano'])
+st.markdown("## California City")
+plot_county(['California City'])
 
 st.markdown("## State of California")
 plot_state()

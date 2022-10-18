@@ -463,8 +463,8 @@ st.markdown(COUNTIES_SELECTED)
 plot_county(COUNTIES_SELECTED)
 
 
-st.markdown("## Tri-county area (Los Angeles, San Francisco, Beverly Hills)")
-plot_county(['Los Angeles', 'San Francisco', 'Beverly Hills'])
+st.markdown("## Tri-county area (Los Angeles, San Francisco, San Jose)")
+plot_county(['Los Angeles', 'San Francisco', 'San Jose'])
 
 st.markdown("## Los Angeles")
 plot_county(['Los Angeles'])
@@ -472,8 +472,8 @@ plot_county(['Los Angeles'])
 st.markdown("## San Francisco")
 plot_county(['San Francisco'])
 
-st.markdown("## Beverly Hills")
-plot_county(['Beverly Hills'])
+st.markdown("## San Jose")
+plot_county(['San Jose'])
 
 st.markdown("## State of California")
 plot_state()

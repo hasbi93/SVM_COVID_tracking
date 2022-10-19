@@ -464,14 +464,14 @@ st.markdown(COUNTIES_SELECTED)
 plot_county(COUNTIES_SELECTED)
 
 
-st.markdown("## Tri-county area (Los Angeles, San Francisco, San Diego)")
-plot_county(['Los Angeles', 'San Francisco', 'San Diego'])
+st.markdown("## Tri-county area (Los Angeles, Nevada, San Diego)")
+plot_county(['Los Angeles', 'Nevada', 'San Diego'])
 
 st.markdown("## Los Angeles")
 plot_county(['Los Angeles'])
 
-st.markdown("## San Francisco")
-plot_county(['San Francisco'])
+st.markdown("## Nevada")
+plot_county(['Nevada'])
 
 st.markdown("## San Diego")
 plot_county(['San Diego'])

@@ -434,8 +434,6 @@ def get_data():
 confirmed, deaths = get_data()
 
 st.sidebar.markdown('# COVID-19 Data and Reporting')
-#st.sidebar.markdown('## **EpiCenter for Disease Dynamics**') 
-#st.sidebar.markdown('**School of Veterinary Medicine   UC Davis**') 
 st.sidebar.markdown("## Key COVID-19 Metrics")
 st.sidebar.markdown("COVID-Local provides basic key metrics against which to assess pandemic response and progress toward reopening. See more at https://www.covidlocal.org/metrics/")
 st.sidebar.markdown('For additional information  please contact *epicenter@ucdavis.edu*  https://ohi.vetmed.ucdavis.edu/centers/epicenter-disease-dynamics')
